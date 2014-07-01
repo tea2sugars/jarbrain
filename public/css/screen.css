@@ -20,3 +20,13 @@ header {
 footer {
 	
 }
+
+/*Typography Treatment*/
+
+h1, h2, h3 {
+	font-family:'VAG Rounded W01 Bold';
+}
+
+h4, h5, h6, p, li {
+	font-family:'VAG Rounded W01 light';
+}
