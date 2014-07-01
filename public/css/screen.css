@@ -6,7 +6,7 @@
 */
 
 body {
-	
+	background: url(../images/background.jpg) white top repeat-x;
 }
 
 .content {
@@ -29,4 +29,8 @@ h1, h2, h3 {
 
 h4, h5, h6, p, li {
 	font-family:'VAG Rounded W01 light';
+}
+
+.gradient {
+       filter: none;
 }
