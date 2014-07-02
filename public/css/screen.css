@@ -13,7 +13,7 @@ body {
 
 .page {
 	margin:0 auto;
-	width:1000px;
+	width:710px;
 	
 }
 
@@ -30,7 +30,7 @@ footer {
 .footer-inner {
 	margin: 	0 auto;
 	padding:	10px 0;
-	width:		1000px;	
+	width:		710px;	
 }
 .footer-inner p {
 	font-size: 		11px;
@@ -57,9 +57,6 @@ h1 span {
 }
 
 h2 {
-	border-top: 		1px solid #0c4fbb;
-	padding:			20px 0;
-	margin:				20px 0;
 	font-size: 			22px;
 	text-transform: 	uppercase;
 }
@@ -69,7 +66,7 @@ p {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: 	none;
 }
 
 
@@ -79,7 +76,6 @@ a {
 	font-size: 				18px;
 	color: 					#ffffff;
 	padding: 				10px 20px;
-	margin-top:				20px;
 	margin-bottom:			20px;
 	background: 			-moz-linear-gradient(
 							top,
@@ -112,9 +108,16 @@ a {
 }
 
 #cta	{
-	margin:40px 0;
+	border-bottom: 			1px solid #0c4fbb;
+	border-top: 			1px solid #0c4fbb;
+	padding:				20px 0 20px 0;
+	margin:					20px 0 40px 0;
+}
+
+#cta article {
+	margin:					40px 0 20px 0;
 }
 
 .gradient {
-       filter: none;
+    filter: 				none;
 }
