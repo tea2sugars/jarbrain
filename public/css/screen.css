@@ -20,7 +20,14 @@ header {
 }
 
 footer {
-	
+	background: black;
+	color: 		white;
+	width:		100%;
+}
+
+.footer-inner {
+	margin: 	0 auto;
+	width:		1000px;	
 }
 
 /*Typography Treatment*/
@@ -31,6 +38,10 @@ h1, h2, h3 {
 
 h4, h5, h6, p, li {
 	font-family:'VAG Rounded W01 light';
+}
+
+p {
+	font-size: 14px;
 }
 
 .gradient {
