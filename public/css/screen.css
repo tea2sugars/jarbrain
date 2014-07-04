@@ -12,13 +12,14 @@ body {
 }
 
 .page {
-	background: url(../images/background.jpg) white top repeat-x;
-	margin:		0 auto;
-	width:		100%;
+	background: 	url(../images/background.jpg) white top repeat-x;
+	margin:			0 auto;
+	width:			100%;
 }
 
 .page .content {
-	width:		100%;
+	width:		1385px;
+	margin:		0 auto;
 	background: url(../images/space_image.png) no-repeat center top;
 	
 }
@@ -30,7 +31,8 @@ body {
 }
 
 header {
-	
+	padding-top:250px;
+	margin-bottom: 50px;
 }
 
 footer {
@@ -60,17 +62,11 @@ h4, h5, h6, p, li {
 	font-family:		'VAG Rounded W01 light';
 }
 
-h1 {
-	
-}
-
-h1 span {
-	
-}
 
 h2 {
-	font-size: 			22px;
+	font-size: 			24px;
 	text-transform: 	uppercase;
+	letter-spacing: 1px;
 }
 
 p {
@@ -123,11 +119,11 @@ a {
 	border-bottom: 			1px solid #0c4fbb;
 	border-top: 			1px solid #0c4fbb;
 	padding:				20px 0 20px 0;
-	margin:					20px 0 40px 0;
+	margin:					40px 0 30px 0;
 }
 
 #cta div {
-	margin:					40px 0 20px 0;
+	margin:					30px 0 20px 0;
 }
 
 
