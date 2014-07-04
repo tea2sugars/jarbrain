@@ -137,6 +137,10 @@ iframe {
     filter: 				none;
 }
 
+#social p i {
+	margin:10px 0 30px 0;
+}
+
 #social li {
 	list-style: none;
 	display: inline-block;
