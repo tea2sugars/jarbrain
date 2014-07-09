@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_handler_area_text.test" server="www.jarbrain.com//" local="130189766564934230" remote="130143154200000000" Dst="2" />
+<file name="views_handler_argument_null.test" server="www.jarbrain.com//" local="130189766576144871" remote="130143154200000000" Dst="2" />
+<file name="views_handler_argument_string.test" server="www.jarbrain.com//" local="130189766576184874" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_boolean.test" server="www.jarbrain.com//" local="130189766585955433" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_counter.test" server="www.jarbrain.com//" local="130189766585965433" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field.test" server="www.jarbrain.com//" local="130189766586035437" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_custom.test" server="www.jarbrain.com//" local="130189766595725991" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_date.test" server="www.jarbrain.com//" local="130189766596486035" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_file_size.test" server="www.jarbrain.com//" local="130189766596486035" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_math.test" server="www.jarbrain.com//" local="130189766606546610" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_url.test" server="www.jarbrain.com//" local="130189766606606614" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_xss.test" server="www.jarbrain.com//" local="130189766606606614" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_combine.test" server="www.jarbrain.com//" local="130189766616507180" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_date.test" server="www.jarbrain.com//" local="130189766616567183" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_equality.test" server="www.jarbrain.com//" local="130189766616567183" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_in_operator.test" server="www.jarbrain.com//" local="130189766626497751" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_numeric.test" server="www.jarbrain.com//" local="130189766626547754" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_string.test" server="www.jarbrain.com//" local="130189766627877830" remote="130143154200000000" Dst="2" />
+<file name="views_handler_sort.test" server="www.jarbrain.com//" local="130189766636788340" remote="130143154200000000" Dst="2" />
+<file name="views_handler_sort_date.test" server="www.jarbrain.com//" local="130189766636808341" remote="130143154200000000" Dst="2" />
+<file name="views_handler_sort_random.test" server="www.jarbrain.com//" local="130189766636808341" remote="130143154200000000" Dst="2" />
+</dwsync>

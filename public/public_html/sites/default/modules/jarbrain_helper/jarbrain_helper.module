@@ -1,0 +1,55 @@
+<?php
+
+/**
+* Implements hook_entity_info_alter().
+*/
+
+function jarbrain_helper_entity_info_alter(&$entity_info) {
+
+  $entity_info['file']['view modes']['mini'] = array(
+    'label' => t('Mini View'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['file']['view modes']['narrow'] = array(
+    'label' => t('Narrow View'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['front_teaser'] = array(
+    'label' => t('Frontpage Teaser'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['summary'] = array(
+    'label' => t('Summary'),
+    'custom settings' => TRUE,
+  );
+
+  $entity_info['node']['view modes']['mini_teaser'] = array(
+    'label' => t('Mini Teaser'),
+    'custom settings' => TRUE,
+  );
+}
+
+function jarbrain_helper_preprocess_page(&$variables) {
+  drupal_add_library('system', 'ui.accordion');
+}
+
+
+/**
+ * Implements hook_menu()
+ */
+function jarbrain_helper_menu() {
+  $items = array();
+
+  $items['front'] = array(
+      'title' => 'Welcome to Jarbrain',
+      'page callback' => 'jarbrain_helper_dummy',
+      'access arguments' => TRUE,
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function jarbrain_helper_dummy() {
+  return '<p></p>';
+}

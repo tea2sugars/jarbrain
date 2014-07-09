@@ -1,0 +1,19 @@
+<?php
+
+function isotope_library() {
+
+  $libraries['isotope'] = array(
+    'title' => 'Isotope',
+    'website' => 'https://github.com/desandro/isotope',
+    'version' => '1.4',
+    'js' => array(
+      drupal_get_path('module', 'isotope').'/js/jquery.isotope.min.js' => array(),
+    ),
+    'css' => array(
+      drupal_get_path('module', 'isotope').'/css/isotope.css' => array(),
+    ),
+  );
+  
+  return $libraries;
+}
+?>

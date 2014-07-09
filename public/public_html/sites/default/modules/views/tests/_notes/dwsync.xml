@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_access.test" server="www.jarbrain.com//" local="130189766705152250" remote="130143148200000000" Dst="2" />
+<file name="views_analyze.test" server="www.jarbrain.com//" local="130189766705172251" remote="130143148200000000" Dst="2" />
+<file name="views_argument_default.test" server="www.jarbrain.com//" local="130189766715022815" remote="130143148200000000" Dst="2" />
+<file name="views_basic.test" server="www.jarbrain.com//" local="130189766715022815" remote="130143148200000000" Dst="2" />
+<file name="views_argument_validator.test" server="www.jarbrain.com//" local="130189766715072818" remote="130143148200000000" Dst="2" />
+<file name="views_cache.test" server="www.jarbrain.com//" local="130189766727913552" remote="130143148200000000" Dst="2" />
+<file name="views_cache.test.css" server="www.jarbrain.com//" local="130189766727913552" remote="130143148200000000" Dst="2" />
+<file name="views_cache.test.js" server="www.jarbrain.com//" local="130189766727963555" remote="130143148200000000" Dst="2" />
+<file name="views_glossary.test" server="www.jarbrain.com//" local="130189766740724285" remote="130143148200000000" Dst="2" />
+<file name="views_exposed_form.test" server="www.jarbrain.com//" local="130189766740794289" remote="130143148200000000" Dst="2" />
+<file name="views_groupby.test" server="www.jarbrain.com//" local="130189766740804289" remote="130143148200000000" Dst="2" />
+<file name="views_module.test" server="www.jarbrain.com//" local="130189766750714856" remote="130143148200000000" Dst="2" />
+<file name="views_handlers.test" server="www.jarbrain.com//" local="130189766750764859" remote="130143148200000000" Dst="2" />
+<file name="views_pager.test" server="www.jarbrain.com//" local="130189766752084935" remote="130143148200000000" Dst="2" />
+<file name="views_plugin_localization_test.inc" server="www.jarbrain.com//" local="130189766762215514" remote="130143148200000000" Dst="2" />
+<file name="views_test.info" server="www.jarbrain.com//" local="130189766762265517" remote="130143148200000000" Dst="2" />
+<file name="views_query.test" server="www.jarbrain.com//" local="130189766762305519" remote="130143148200000000" Dst="2" />
+<file name="views_test.install" server="www.jarbrain.com//" local="130189766774976244" remote="130143148200000000" Dst="2" />
+<file name="views_test.module" server="www.jarbrain.com//" local="130189766775026247" remote="130143148200000000" Dst="2" />
+<file name="views_translatable.test" server="www.jarbrain.com//" local="130189766783466730" remote="130143148200000000" Dst="2" />
+<file name="views_test.views_default.inc" server="www.jarbrain.com//" local="130189766789257061" remote="130143148200000000" Dst="2" />
+<file name="views_ui.test" server="www.jarbrain.com//" local="130189766789257061" remote="130143148200000000" Dst="2" />
+<file name="views_upgrade.test" server="www.jarbrain.com//" local="130189766789327065" remote="130143148200000000" Dst="2" />
+<file name="views_view.test" server="www.jarbrain.com//" local="130189766803387869" remote="130143148200000000" Dst="2" />
+</dwsync>

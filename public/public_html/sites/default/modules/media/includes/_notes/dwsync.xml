@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="MediaBrowserPlugin.inc" server="www.jarbrain.com//" local="130189763691999908" remote="130143149400000000" Dst="2" />
+<file name="MediaBrowserPluginInterface.inc" server="www.jarbrain.com//" local="130189763704530624" remote="130143149400000000" Dst="2" />
+<file name="MediaBrowserUpload.inc" server="www.jarbrain.com//" local="130189763704540625" remote="130143149400000000" Dst="2" />
+<file name="MediaBrowserView.inc" server="www.jarbrain.com//" local="130189763704600628" remote="130143149400000000" Dst="2" />
+<file name="MediaEntityTranslationHandler.inc" server="www.jarbrain.com//" local="130189763714261181" remote="130143149400000000" Dst="2" />
+<file name="MediaReadOnlyStreamWrapper.inc" server="www.jarbrain.com//" local="130189763714271182" remote="130143149400000000" Dst="2" />
+<file name="media.admin.inc" server="www.jarbrain.com//" local="130189763714351186" remote="130143149400000000" Dst="2" />
+<file name="media.browser.inc" server="www.jarbrain.com//" local="130189763723901732" remote="130143149400000000" Dst="2" />
+<file name="media.fields.inc" server="www.jarbrain.com//" local="130189763723921734" remote="130143149400000000" Dst="2" />
+<file name="media.filter.inc" server="www.jarbrain.com//" local="130189763725261810" remote="130143149400000000" Dst="2" />
+<file name="media.pages.inc" server="www.jarbrain.com//" local="130189763733622288" remote="130143149400000000" Dst="2" />
+<file name="media.theme.inc" server="www.jarbrain.com//" local="130189763733642290" remote="130143149400000000" Dst="2" />
+<file name="media.variables.inc" server="www.jarbrain.com//" local="130189763733662291" remote="130143149400000000" Dst="2" />
+<file name="media_views_plugin_display_media_browser.inc" server="www.jarbrain.com//" local="130189763743402848" remote="130143149400000000" Dst="2" />
+<file name="media_views_plugin_style_media_browser.inc" server="www.jarbrain.com//" local="130189763743412848" remote="130143149400000000" Dst="2" />
+<file name="media.xml.inc" server="www.jarbrain.com//" local="130189763743422849" remote="130143149400000000" Dst="2" />
+</dwsync>

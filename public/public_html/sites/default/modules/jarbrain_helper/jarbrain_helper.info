@@ -1,0 +1,5 @@
+name = Jarbrain Helper
+description = Adds functions to help jarbrain theme.
+core = 7.x
+package = Jarbrain Helper
+files[] = jarbrain_helper.module

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://www.jarbrain.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://www.jarbrain.com/blog</loc><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/service/animation</loc><lastmod>2013-07-18T23:17Z</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/service/production</loc><lastmod>2013-07-18T23:17Z</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/service/creative-design</loc><lastmod>2013-07-18T23:17Z</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/showreel</loc><priority>1.0</priority></url>
+<url><loc>http://www.jarbrain.com/the-house-that-groaned</loc><lastmod>2013-09-11T22:52Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/lastvoicesofageneration</loc><lastmod>2013-10-01T10:48Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/S4nity</loc><lastmod>2013-09-11T22:50Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/its-only-a-theory</loc><lastmod>2013-09-11T22:55Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/ideoma-liner</loc><lastmod>2013-09-13T18:15Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/wimbledon</loc><lastmod>2013-10-10T11:53Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/showreel-motion</loc></url>
+<url><loc>http://www.jarbrain.com/showreel-production</loc></url>
+<url><loc>http://www.jarbrain.com/portfolio/geeksquad</loc><lastmod>2013-10-10T11:53Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/node/86</loc><lastmod>2013-09-11T22:52Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/node/90</loc><lastmod>2013-09-11T23:37Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/phineas-and-ferb-competition</loc><lastmod>2013-09-13T01:32Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>http://www.jarbrain.com/disneyplayhouse</loc><lastmod>2013-09-20T15:12Z</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

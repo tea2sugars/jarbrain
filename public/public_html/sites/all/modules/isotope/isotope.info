@@ -1,0 +1,8 @@
+name = Isotope
+description = Adds functions to help utilise Isotope.
+core = 7.x
+package = Isotope
+files[] = isotope.module
+files[] = css/isotope.css
+files[] = css/jquery.isotope.min.js
+#configure = admin/config/content/example

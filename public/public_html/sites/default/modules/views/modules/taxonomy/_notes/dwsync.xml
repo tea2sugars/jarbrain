@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_handler_argument_taxonomy.inc" server="www.jarbrain.com//" local="130189766143920150" remote="130143154200000000" Dst="2" />
+<file name="views_handler_argument_term_node_tid.inc" server="www.jarbrain.com//" local="130189766144020155" remote="130143154200000000" Dst="2" />
+<file name="views_handler_argument_term_node_tid_depth.inc" server="www.jarbrain.com//" local="130189766153750712" remote="130143154200000000" Dst="2" />
+<file name="views_handler_argument_term_node_tid_depth_modifier.inc" server="www.jarbrain.com//" local="130189766153800715" remote="130143154200000000" Dst="2" />
+<file name="views_handler_argument_vocabulary_machine_name.inc" server="www.jarbrain.com//" local="130189766153800715" remote="130143154200000000" Dst="2" />
+<file name="views_handler_argument_vocabulary_vid.inc" server="www.jarbrain.com//" local="130189766163801287" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_taxonomy.inc" server="www.jarbrain.com//" local="130189766163841289" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_term_link_edit.inc" server="www.jarbrain.com//" local="130189766163851290" remote="130143154200000000" Dst="2" />
+<file name="views_handler_field_term_node_tid.inc" server="www.jarbrain.com//" local="130189766173941867" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_term_node_tid.inc" server="www.jarbrain.com//" local="130189766173941867" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_term_node_tid_depth.inc" server="www.jarbrain.com//" local="130189766173951867" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_vocabulary_machine_name.inc" server="www.jarbrain.com//" local="130189766183802431" remote="130143154200000000" Dst="2" />
+<file name="views_handler_filter_vocabulary_vid.inc" server="www.jarbrain.com//" local="130189766183842433" remote="130143154200000000" Dst="2" />
+<file name="views_handler_relationship_node_term_data.inc" server="www.jarbrain.com//" local="130189766183852434" remote="130143154200000000" Dst="2" />
+<file name="views_plugin_argument_default_taxonomy_tid.inc" server="www.jarbrain.com//" local="130189766193602991" remote="130143154200000000" Dst="2" />
+<file name="views_plugin_argument_validate_taxonomy_term.inc" server="www.jarbrain.com//" local="130189766193602991" remote="130143154200000000" Dst="2" />
+</dwsync>

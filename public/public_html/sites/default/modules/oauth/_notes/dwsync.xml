@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="1365168-4.fastcgi-fix.patch" server="www.jarbrain.com//" local="130189764253482023" remote="130143139200000000" Dst="2" />
+<file name="1404030-2.patch" server="www.jarbrain.com//" local="130189764253522025" remote="130143139200000000" Dst="2" />
+<file name="CHANGELOG" server="www.jarbrain.com//" local="130189764253562027" remote="130143139200000000" Dst="2" />
+<file name="README" server="www.jarbrain.com//" local="130189764266202750" remote="130143139200000000" Dst="2" />
+<file name="LICENSE.txt" server="www.jarbrain.com//" local="130189764266242753" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.authorizations.inc" server="www.jarbrain.com//" local="130189764308815188" remote="130143139200000000" Dst="2" />
+<file name="oauth-fatal_error_class_OAuthException-1334528-11.patch" server="www.jarbrain.com//" local="130189764308845189" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.admin.inc" server="www.jarbrain.com//" local="130189764308885192" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.info" server="www.jarbrain.com//" local="130189764321415908" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.consumers.inc" server="www.jarbrain.com//" local="130189764321455911" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.inc" server="www.jarbrain.com//" local="130189764321455911" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.install" server="www.jarbrain.com//" local="130189764335446711" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.module" server="www.jarbrain.com//" local="130189764335486713" remote="130143139200000000" Dst="2" />
+<file name="oauth_common.pages.inc" server="www.jarbrain.com//" local="130189764335576718" remote="130143139200000000" Dst="2" />
+<file name="oauth_common_providerui.info" server="www.jarbrain.com//" local="130189764345167267" remote="130143139200000000" Dst="2" />
+<file name="oauth_common_providerui.module" server="www.jarbrain.com//" local="130189764345207269" remote="130143139200000000" Dst="2" />
+</dwsync>
