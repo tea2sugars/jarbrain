@@ -5,6 +5,7 @@
   <title><?php print $head_title; ?></title>  
   <?php print $styles; ?>
   <script type="text/javascript" src="http://fast.fonts.net/jsapi/ddf30376-7d42-433e-af99-b1cefe2d1e16.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
   <?php print $scripts; ?>
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
