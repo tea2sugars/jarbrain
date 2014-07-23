@@ -150,7 +150,6 @@ iframe {
 
 #social li i {
 	border-radius: 			5px;
-	border: 				2px solid #0c4fbb;
 	-moz-box-shadow:
 							0px 3px 11px rgba(000,000,000,0.5),
 							inset 0px 0px 4px rgba(255,255,255,1);
@@ -160,13 +159,36 @@ iframe {
 	box-shadow:
 							0px 3px 11px rgba(000,000,000,0.5),
 							inset 0px 0px 4px rgba(255,255,255,1);
-	text-shadow:
-							0px 0px 0px rgba(000,000,000,0),
+	color: 					white;
+	height:					35px;
+	padding-top:			5px;
+	text-shadow:			0px 0px 0px rgba(000,000,000,0),
 							0px 0px 0px rgba(255,255,255,0);
 	width:					40px;
-	height:					35px;
-	padding-top:5px;
+}
 
-	background: 			#0c4fbb;
-	color: 					white;
+#social li i.fa-google-plus {
+	background:				#d64136;
+	border: 				2px solid #d64136;
+}
+
+#social li i.fa-youtube {
+	background:				#d32323;
+	border: 				2px solid #d32323;
+}
+#social li i.fa-flickr {
+	background:				#ff3096;
+	border: 				2px solid #ff3096;
+}
+#social li i.fa-facebook {
+	background:				#3c599f;
+	border: 				2px solid #3c599f;
+}
+#social li i.fa-twitter {
+	background:				#5fa9dd;
+	border: 				2px solid #5fa9dd;
+}
+#social li i.fa-pinterest {
+	background:				#cb2027;
+	border: 				2px solid #cb2027;
 }
