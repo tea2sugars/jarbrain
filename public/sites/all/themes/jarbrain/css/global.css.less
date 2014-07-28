@@ -1,15 +1,25 @@
 @import('common.css.less');
 
-body {
-
-	h1 {
+h1 {
 			@font-bold;
 			letter-spacing: 0.005em;
-	}
+}
 	
-	footer {
+footer {
 		background:		@color-dark-grey;
 		color:			white;
-	}
+}
 	
+.embedded-video {
+	background: white;
+	text-align: 	center;
+		iframe{
+			height:		215px;
+			width:		100%;
+			@media all and @breakpoint-narrow-plus {
+				height:	540px;
+				width:	100%;
+			}
+			
+		}
 }
