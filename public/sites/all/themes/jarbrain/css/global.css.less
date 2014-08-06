@@ -2,11 +2,49 @@
 
 h1 {
 			@font-bold;
-			letter-spacing: 0.005em;
+			letter-spacing: 	0.005em;
+}
+
+h1#page-title {
+			color:				white;
+}
+
+h2, h3 {
+			@font-bold;
+}
+
+h4, h5, h6 {
+			@font-light;
+}
+
+ul {
+	margin:0;
+}
+
+a:link, a:visited {
+	color: 				@color-brand-blue;
+	text-decoration: 	none;
+}
+
+a:hover {
+	text-decoration: 	underline;
 }
 
 .node ol, .node ul {
 	padding-left:0;
+}
+
+#region-header-first {
+	background: @color-brand-blue;
+}
+
+#breadcrumb {
+	background: 	white;
+	border-top: 	8px solid @color-dark-blue;
+	border-bottom: 	4px solid @color-dark-blue;
+	.breadcrumb {
+		margin:5px 0;
+	}
 }
 	
 #section-footer {
@@ -128,6 +166,16 @@ ul.nice-menu {
 						}
 					}
 				}
+}
+
+/*Portfolio*/
+
+.views-exposed-widgets {
+	width:		100%;
+	@media all and @breakpoint-narrow-plus {
+		float:right;
+		width:260px;
+	}
 }
 
 .portfolio-list {
