@@ -8,10 +8,12 @@ h1 {
 
 h2, h3 {
 			@font-bold;
+			color: @color-dark-grey;
 }
 
 h4, h5, h6 {
 			@font-light;
+			color: @color-dark-grey;
 }
 
 ul {
@@ -38,6 +40,12 @@ a:hover {
 	padding:			10px 0;
 	width:				100%;
 }
+
+/*Elements*/
+img {
+	.responsive_image;
+}
+
 
 /*Pager*/
 /* Pagers Positioning */
@@ -292,6 +300,26 @@ ul.nice-menu {
 	ul {
 		li {
 			height: 400px;
+		}
+	}
+}
+
+/*Blog*/
+.blog-post {
+	.blog-header-image {
+		margin-bottom:20px;
+	}
+	.blog-body-wrapper {
+		margin-bottom:40px;
+		.blog-meta {
+			@font-meta;
+			img {
+				width:80px;
+				height:80px;
+				@media all and @breakpoint-narrow-plus {
+					.responsive_image;
+				}
+			}
 		}
 	}
 }

@@ -13,8 +13,18 @@
 @font-black		{font-family:'VAG Rounded W01 Black', 'Varela Round', sans-serif;}
 @font-thin		{font-family:'VAG Rounded W01 Thin', 'Varela Round', sans-serif;}
 @font-bold 		{font-family:'VAG Rounded W01 Bold', 'Varela Round', sans-serif;}
+@font-meta		{font-size:12px; color: @color-grey;}
 
 /* mq for changing things at breakpoints - so after the area labelled */
 @breakpoint-narrow-plus: ~'(min-width: 768px)';
 @breakpoint-normal-plus: ~'(min-width: 980px)';
 @breakpoint-wide-plus: ~'(min-width: 1220px)';
+
+/*Image Resize*/
+.responsive_image {
+	width:100%;
+	height:auto;
+	@media all and @breakpoint-narrow-plus {
+		width:	inherit;
+	}
+}
