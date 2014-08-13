@@ -10,10 +10,18 @@
 
 /*Fonts*/
 @font-light		{font-family:'VAG Rounded W01 Light', 'Varela Round', sans-serif;}
+.font-light 	{@font-light;}
 @font-black		{font-family:'VAG Rounded W01 Black', 'Varela Round', sans-serif;}
 @font-thin		{font-family:'VAG Rounded W01 Thin', 'Varela Round', sans-serif;}
 @font-bold 		{font-family:'VAG Rounded W01 Bold', 'Varela Round', sans-serif;}
-@font-meta		{font-size:12px; color: @color-grey;}
+
+@font-meta		{
+			.font-light;
+			color: @color-grey;
+			font-size: 13px;
+			font-weight: normal;
+			margin-bottom:5px;
+		}
 
 /* mq for changing things at breakpoints - so after the area labelled */
 @breakpoint-narrow-plus: ~'(min-width: 768px)';
