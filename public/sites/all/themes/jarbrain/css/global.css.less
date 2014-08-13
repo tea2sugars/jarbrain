@@ -49,15 +49,40 @@ img {
 
 /*Pager*/
 /* Pagers Positioning */
-.item-list {
-	margin:					0 auto;
-	width:					25%;
+
+/*---------------------------NEEDS ADJUSTING AS MESSING WITH BLOG, BELOW IS FOR THE PAGER------------------------------------*/
+
+
+.pager {
+  background: 				none;
+  border:					none;
+  border-radius: 			0;
+  -moz-border-radius: 		0;
+  -webkit-border-radius: 	0;
+  padding:					0;
+  margin: 					0 auto;
+  width:					80%;
+  @media all and @breakpoint-narrow-plus {
+  	width:					50%;
+  	}
 }
 
-.item-list .pager {
-  padding:					0;
-  margin: 					0;
+.pager li.first,
+.pager li.first a,
+.pager li.first a:hover {
+  /* border-radius: 5px 0 0 5px; */
+  -moz-border-radius: 		5px 0 0 5px;
+  /* -webkit-border-radius: 5px 0 0 5px; */
 }
+
+.pager li.pager-last,
+.pager li.pager-last a,
+.pager li.pager-last a:hover {
+  /* border-radius: 0 5px 5px 0; */
+  -moz-border-radius: 		0 5px 5px 0;
+  /* -webkit-border-radius: 0 5px 5px 0; */
+}
+
 
 .pager li.pager-first a,
 .pager li.pager-previous a,
@@ -108,31 +133,6 @@ img {
 .pager li a:hover {
   background: 				none;
   color: 					@color-brand-blue;
-}
-
-/* Add default border radius to list items & links */
-.pager {
-  background: 				none;
-  border:					none;
-  border-radius: 			0;
-  -moz-border-radius: 		0;
-  -webkit-border-radius: 	0;
-}
-
-.pager li.first,
-.pager li.first a,
-.pager li.first a:hover {
-  /* border-radius: 5px 0 0 5px; */
-  -moz-border-radius: 		5px 0 0 5px;
-  /* -webkit-border-radius: 5px 0 0 5px; */
-}
-
-.pager li.pager-last,
-.pager li.pager-last a,
-.pager li.pager-last a:hover {
-  /* border-radius: 0 5px 5px 0; */
-  -moz-border-radius: 		0 5px 5px 0;
-  /* -webkit-border-radius: 0 5px 5px 0; */
 }
 
 
