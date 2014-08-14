@@ -1,6 +1,10 @@
 @import('common.css.less');
 
 /*Typography*/
+body {
+	color: @color-grey;
+}
+
 h1 {
 			@font-bold;
 			letter-spacing: 	0.005em;
@@ -15,6 +19,8 @@ h4, h5, h6 {
 			@font-light;
 			color: @color-dark-grey;
 }
+
+p {color: @color-grey;}
 
 ul {
 	margin:0;
@@ -293,6 +299,23 @@ ul.nice-menu {
 	img {
 		height:	auto;
 		width:	100%;
+	}
+}
+
+.node-type-portfolio {
+	.field-name-body {
+		width:		100%;
+			@media all and @breakpoint-normal-plus {
+				width:	70%;
+				margin:	0 auto;
+			}
+			@media all and @breakpoint-wide-plus {
+				width:	60%;
+				margin:	0 auto;
+			}
+	}
+	.field-name-field-client-quote {
+		.block-quote;
 	}
 }
 
