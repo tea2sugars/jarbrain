@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 01, 2014 at 07:39 AM
+-- Generation Time: Aug 14, 2014 at 09:21 AM
 -- Server version: 5.1.44
 -- PHP Version: 5.3.2
 
@@ -149,7 +149,7 @@ CREATE TABLE `block` (
   PRIMARY KEY (`bid`),
   UNIQUE KEY `tmd` (`theme`,`module`,`delta`),
   KEY `list` (`theme`,`status`,`region`,`weight`,`module`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores block settings, such as region and visibility...' AUTO_INCREMENT=120 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores block settings, such as region and visibility...' AUTO_INCREMENT=132 ;
 
 -- --------------------------------------------------------
 
@@ -225,7 +225,7 @@ CREATE TABLE `breakpoints` (
   `multipliers` blob NOT NULL COMMENT 'all enabled multipliers',
   PRIMARY KEY (`id`),
   UNIQUE KEY `machine_name` (`machine_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Breakpoints' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Breakpoints' AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -242,7 +242,7 @@ CREATE TABLE `breakpoint_group` (
   `overridden` int(11) NOT NULL DEFAULT '0' COMMENT 'Boolean indicating if this group is overriden',
   PRIMARY KEY (`id`),
   UNIQUE KEY `machine_name` (`machine_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Breakpoint group' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Breakpoint group' AUTO_INCREMENT=7 ;
 
 -- --------------------------------------------------------
 
@@ -580,7 +580,7 @@ CREATE TABLE `captcha_sessions` (
   `attempts` int(11) NOT NULL DEFAULT '0' COMMENT 'The number of attempts.',
   PRIMARY KEY (`csid`),
   KEY `csid_ip` (`csid`,`ip_address`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Stores the data about CAPTCHA sessions (solution, IP...' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores the data about CAPTCHA sessions (solution, IP...' AUTO_INCREMENT=32 ;
 
 -- --------------------------------------------------------
 
@@ -911,7 +911,7 @@ CREATE TABLE `field_config_instance` (
   PRIMARY KEY (`id`),
   KEY `field_name_bundle` (`field_name`,`entity_type`,`bundle`),
   KEY `deleted` (`deleted`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
 
 -- --------------------------------------------------------
 
@@ -965,6 +965,35 @@ CREATE TABLE `field_data_comment_body` (
   KEY `language` (`language`),
   KEY `comment_body_format` (`comment_body_format`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Data storage for field 1 (comment_body)';
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `field_data_field_blog_image`
+--
+
+CREATE TABLE `field_data_field_blog_image` (
+  `entity_type` varchar(128) NOT NULL DEFAULT '' COMMENT 'The entity type this data is attached to',
+  `bundle` varchar(128) NOT NULL DEFAULT '' COMMENT 'The field instance bundle to which this row belongs, used when deleting a field instance',
+  `deleted` tinyint(4) NOT NULL DEFAULT '0' COMMENT 'A boolean indicating whether this data item has been deleted',
+  `entity_id` int(10) unsigned NOT NULL COMMENT 'The entity id this data is attached to',
+  `revision_id` int(10) unsigned DEFAULT NULL COMMENT 'The entity revision id this data is attached to, or NULL if the entity type is not versioned',
+  `language` varchar(32) NOT NULL DEFAULT '' COMMENT 'The language for this data item.',
+  `delta` int(10) unsigned NOT NULL COMMENT 'The sequence number for this data item, used for multi-value fields',
+  `field_blog_image_fid` int(10) unsigned DEFAULT NULL COMMENT 'The file_managed.fid being referenced in this field.',
+  `field_blog_image_alt` varchar(512) DEFAULT NULL COMMENT 'Alternative image text, for the image’s ’alt’ attribute.',
+  `field_blog_image_title` varchar(1024) DEFAULT NULL COMMENT 'Image title text, for the image’s ’title’ attribute.',
+  `field_blog_image_width` int(10) unsigned DEFAULT NULL COMMENT 'The width of the image in pixels.',
+  `field_blog_image_height` int(10) unsigned DEFAULT NULL COMMENT 'The height of the image in pixels.',
+  PRIMARY KEY (`entity_type`,`entity_id`,`deleted`,`delta`,`language`),
+  KEY `entity_type` (`entity_type`),
+  KEY `bundle` (`bundle`),
+  KEY `deleted` (`deleted`),
+  KEY `entity_id` (`entity_id`),
+  KEY `revision_id` (`revision_id`),
+  KEY `language` (`language`),
+  KEY `field_blog_image_fid` (`field_blog_image_fid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Data storage for field 12 (field_blog_image)';
 
 -- --------------------------------------------------------
 
@@ -1129,34 +1158,6 @@ CREATE TABLE `field_data_field_project_type` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `field_data_field_showreel_url`
---
-
-CREATE TABLE `field_data_field_showreel_url` (
-  `entity_type` varchar(128) NOT NULL DEFAULT '' COMMENT 'The entity type this data is attached to',
-  `bundle` varchar(128) NOT NULL DEFAULT '' COMMENT 'The field instance bundle to which this row belongs, used when deleting a field instance',
-  `deleted` tinyint(4) NOT NULL DEFAULT '0' COMMENT 'A boolean indicating whether this data item has been deleted',
-  `entity_id` int(10) unsigned NOT NULL COMMENT 'The entity id this data is attached to',
-  `revision_id` int(10) unsigned DEFAULT NULL COMMENT 'The entity revision id this data is attached to, or NULL if the entity type is not versioned',
-  `language` varchar(32) NOT NULL DEFAULT '' COMMENT 'The language for this data item.',
-  `delta` int(10) unsigned NOT NULL COMMENT 'The sequence number for this data item, used for multi-value fields',
-  `field_showreel_url_video_url` varchar(512) DEFAULT '',
-  `field_showreel_url_thumbnail_path` varchar(512) DEFAULT '',
-  `field_showreel_url_video_data` longblob,
-  `field_showreel_url_embed_code` varchar(1024) DEFAULT '',
-  `field_showreel_url_description` text,
-  PRIMARY KEY (`entity_type`,`entity_id`,`deleted`,`delta`,`language`),
-  KEY `entity_type` (`entity_type`),
-  KEY `bundle` (`bundle`),
-  KEY `deleted` (`deleted`),
-  KEY `entity_id` (`entity_id`),
-  KEY `revision_id` (`revision_id`),
-  KEY `language` (`language`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Data storage for field 12 (field_showreel_url)';
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `field_data_field_tags`
 --
 
@@ -1304,6 +1305,35 @@ CREATE TABLE `field_revision_comment_body` (
   KEY `language` (`language`),
   KEY `comment_body_format` (`comment_body_format`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Revision archive storage for field 1 (comment_body)';
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `field_revision_field_blog_image`
+--
+
+CREATE TABLE `field_revision_field_blog_image` (
+  `entity_type` varchar(128) NOT NULL DEFAULT '' COMMENT 'The entity type this data is attached to',
+  `bundle` varchar(128) NOT NULL DEFAULT '' COMMENT 'The field instance bundle to which this row belongs, used when deleting a field instance',
+  `deleted` tinyint(4) NOT NULL DEFAULT '0' COMMENT 'A boolean indicating whether this data item has been deleted',
+  `entity_id` int(10) unsigned NOT NULL COMMENT 'The entity id this data is attached to',
+  `revision_id` int(10) unsigned NOT NULL COMMENT 'The entity revision id this data is attached to',
+  `language` varchar(32) NOT NULL DEFAULT '' COMMENT 'The language for this data item.',
+  `delta` int(10) unsigned NOT NULL COMMENT 'The sequence number for this data item, used for multi-value fields',
+  `field_blog_image_fid` int(10) unsigned DEFAULT NULL COMMENT 'The file_managed.fid being referenced in this field.',
+  `field_blog_image_alt` varchar(512) DEFAULT NULL COMMENT 'Alternative image text, for the image’s ’alt’ attribute.',
+  `field_blog_image_title` varchar(1024) DEFAULT NULL COMMENT 'Image title text, for the image’s ’title’ attribute.',
+  `field_blog_image_width` int(10) unsigned DEFAULT NULL COMMENT 'The width of the image in pixels.',
+  `field_blog_image_height` int(10) unsigned DEFAULT NULL COMMENT 'The height of the image in pixels.',
+  PRIMARY KEY (`entity_type`,`entity_id`,`revision_id`,`deleted`,`delta`,`language`),
+  KEY `entity_type` (`entity_type`),
+  KEY `bundle` (`bundle`),
+  KEY `deleted` (`deleted`),
+  KEY `entity_id` (`entity_id`),
+  KEY `revision_id` (`revision_id`),
+  KEY `language` (`language`),
+  KEY `field_blog_image_fid` (`field_blog_image_fid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Revision archive storage for field 12 (field_blog_image)';
 
 -- --------------------------------------------------------
 
@@ -1468,34 +1498,6 @@ CREATE TABLE `field_revision_field_project_type` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `field_revision_field_showreel_url`
---
-
-CREATE TABLE `field_revision_field_showreel_url` (
-  `entity_type` varchar(128) NOT NULL DEFAULT '' COMMENT 'The entity type this data is attached to',
-  `bundle` varchar(128) NOT NULL DEFAULT '' COMMENT 'The field instance bundle to which this row belongs, used when deleting a field instance',
-  `deleted` tinyint(4) NOT NULL DEFAULT '0' COMMENT 'A boolean indicating whether this data item has been deleted',
-  `entity_id` int(10) unsigned NOT NULL COMMENT 'The entity id this data is attached to',
-  `revision_id` int(10) unsigned NOT NULL COMMENT 'The entity revision id this data is attached to',
-  `language` varchar(32) NOT NULL DEFAULT '' COMMENT 'The language for this data item.',
-  `delta` int(10) unsigned NOT NULL COMMENT 'The sequence number for this data item, used for multi-value fields',
-  `field_showreel_url_video_url` varchar(512) DEFAULT '',
-  `field_showreel_url_thumbnail_path` varchar(512) DEFAULT '',
-  `field_showreel_url_video_data` longblob,
-  `field_showreel_url_embed_code` varchar(1024) DEFAULT '',
-  `field_showreel_url_description` text,
-  PRIMARY KEY (`entity_type`,`entity_id`,`revision_id`,`deleted`,`delta`,`language`),
-  KEY `entity_type` (`entity_type`),
-  KEY `bundle` (`bundle`),
-  KEY `deleted` (`deleted`),
-  KEY `entity_id` (`entity_id`),
-  KEY `revision_id` (`revision_id`),
-  KEY `language` (`language`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Revision archive storage for field 12 (field_showreel_url)';
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `field_revision_field_tags`
 --
 
@@ -1591,7 +1593,7 @@ CREATE TABLE `file_managed` (
   KEY `uid` (`uid`),
   KEY `status` (`status`),
   KEY `timestamp` (`timestamp`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores information for uploaded files.' AUTO_INCREMENT=195 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores information for uploaded files.' AUTO_INCREMENT=243 ;
 
 -- --------------------------------------------------------
 
@@ -1660,7 +1662,7 @@ CREATE TABLE `flood` (
   PRIMARY KEY (`fid`),
   KEY `allow` (`event`,`identifier`,`timestamp`),
   KEY `purge` (`expiration`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Flood controls the threshold of events, such as the...' AUTO_INCREMENT=75 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Flood controls the threshold of events, such as the...' AUTO_INCREMENT=149 ;
 
 -- --------------------------------------------------------
 
@@ -1709,7 +1711,7 @@ CREATE TABLE `image_effects` (
   PRIMARY KEY (`ieid`),
   KEY `isid` (`isid`),
   KEY `weight` (`weight`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Stores configuration options for image effects.' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores configuration options for image effects.' AUTO_INCREMENT=37 ;
 
 -- --------------------------------------------------------
 
@@ -1723,7 +1725,7 @@ CREATE TABLE `image_styles` (
   `label` varchar(255) NOT NULL DEFAULT '' COMMENT 'The style administrative name.',
   PRIMARY KEY (`isid`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Stores configuration options for image styles.' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores configuration options for image styles.' AUTO_INCREMENT=30 ;
 
 -- --------------------------------------------------------
 
@@ -1762,7 +1764,7 @@ CREATE TABLE `locales_source` (
   `version` varchar(20) NOT NULL DEFAULT 'none' COMMENT 'Version of Drupal, where the string was last used (for locales optimization).',
   PRIMARY KEY (`lid`),
   KEY `source_context` (`source`(30),`context`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='List of English source strings.' AUTO_INCREMENT=46 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='List of English source strings.' AUTO_INCREMENT=73 ;
 
 -- --------------------------------------------------------
 
@@ -1832,7 +1834,7 @@ CREATE TABLE `menu_links` (
   KEY `menu_plid_expand_child` (`menu_name`,`plid`,`expanded`,`has_children`),
   KEY `menu_parents` (`menu_name`,`p1`,`p2`,`p3`,`p4`,`p5`,`p6`,`p7`,`p8`,`p9`),
   KEY `router_path` (`router_path`(128))
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Contains the individual links within a menu.' AUTO_INCREMENT=910 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Contains the individual links within a menu.' AUTO_INCREMENT=1167 ;
 
 -- --------------------------------------------------------
 
@@ -1903,7 +1905,7 @@ CREATE TABLE `node` (
   KEY `tnid` (`tnid`),
   KEY `translate` (`translate`),
   KEY `language` (`language`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='The base table for nodes.' AUTO_INCREMENT=227 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='The base table for nodes.' AUTO_INCREMENT=313 ;
 
 -- --------------------------------------------------------
 
@@ -1960,7 +1962,7 @@ CREATE TABLE `node_revision` (
   PRIMARY KEY (`vid`),
   KEY `nid` (`nid`),
   KEY `uid` (`uid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores information about each saved version of a node.' AUTO_INCREMENT=227 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores information about each saved version of a node.' AUTO_INCREMENT=313 ;
 
 -- --------------------------------------------------------
 
@@ -2158,7 +2160,7 @@ CREATE TABLE `panels_display` (
   `title_pane` int(11) DEFAULT '0',
   `uuid` char(36) DEFAULT NULL,
   PRIMARY KEY (`did`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 -- --------------------------------------------------------
 
@@ -2235,7 +2237,7 @@ CREATE TABLE `panels_pane` (
   `uuid` char(36) DEFAULT NULL,
   PRIMARY KEY (`pid`),
   KEY `did_idx` (`did`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=44 ;
 
 -- --------------------------------------------------------
 
@@ -2282,7 +2284,7 @@ CREATE TABLE `picture_mapping` (
   `breakpoint_group` varchar(255) NOT NULL COMMENT 'The group this mapping belongs to',
   `mapping` blob NOT NULL COMMENT 'The mappings linked to the breakpoints group',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Responsible images and styles mappings to breakpoints' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Responsible images and styles mappings to breakpoints' AUTO_INCREMENT=7 ;
 
 -- --------------------------------------------------------
 
@@ -2337,7 +2339,7 @@ CREATE TABLE `redirect` (
   UNIQUE KEY `hash` (`hash`),
   KEY `expires` (`type`,`access`),
   KEY `source_language` (`source`,`language`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores information on redirects.' AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Stores information on redirects.' AUTO_INCREMENT=9 ;
 
 -- --------------------------------------------------------
 
@@ -2703,7 +2705,7 @@ CREATE TABLE `url_alias` (
   PRIMARY KEY (`pid`),
   KEY `alias_language_pid` (`alias`,`language`,`pid`),
   KEY `source_language_pid` (`source`,`language`,`pid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='A list of URL aliases for Drupal paths; a user may visit...' AUTO_INCREMENT=253 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='A list of URL aliases for Drupal paths; a user may visit...' AUTO_INCREMENT=340 ;
 
 -- --------------------------------------------------------
 
@@ -2831,7 +2833,7 @@ CREATE TABLE `watchdog` (
   KEY `type` (`type`),
   KEY `uid` (`uid`),
   KEY `severity` (`severity`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Table that contains logs of all system events.' AUTO_INCREMENT=312 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Table that contains logs of all system events.' AUTO_INCREMENT=567 ;
 
 -- --------------------------------------------------------
 
