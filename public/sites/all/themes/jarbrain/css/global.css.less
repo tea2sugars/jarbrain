@@ -30,6 +30,10 @@ ul {
 	margin:0;
 }
 
+.center-text {
+	text-align: center !important;
+}
+
 
 a:link, a:visited {
 	color: 				@color-brand-blue;
@@ -38,6 +42,10 @@ a:link, a:visited {
 
 a:hover {
 	text-decoration: 	underline;
+}
+
+a.button {
+	.button-lrg;
 }
 
 .node ol, .node ul {
@@ -60,9 +68,6 @@ img {
 
 /*Pager*/
 /* Pagers Positioning */
-
-/*---------------------------NEEDS ADJUSTING AS MESSING WITH BLOG, BELOW IS FOR THE PAGER------------------------------------*/
-
 
 .pager {
   background: 				none;
@@ -316,6 +321,19 @@ ul.nice-menu {
 	}
 	.field-name-field-client-quote {
 		.block-quote;
+	}
+	.pane-node-field-client-quote,
+	.pane-node-field-quote-name,
+	.pane-node-field-credits,
+	.pane-node-field-external-url {
+		width:	80%;
+		margin:	0 auto;
+		@media all and @breakpoint-narrow-plus {
+			width:50%;
+		}
+	}
+	.pane-node-field-credits {
+		text-align: center;
 	}
 }
 
