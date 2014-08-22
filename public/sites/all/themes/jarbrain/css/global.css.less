@@ -351,10 +351,16 @@ ul.nice-menu {
 	    &:hover {
 		    .caption {
 		    	@media all and @breakpoint-normal-plus {
-					-moz-transform: 	translateY(-100%);  
-				    -o-transform: 		translateY(-100%);  
-				    -webkit-transform: 	translateY(-100%);  
-				    transform: 			translateY(-100%); 
+					-moz-transform: 	translateY(-137px);  
+				    -o-transform: 		translateY(-137px);  
+				    -webkit-transform: 	translateY(-137px);  
+				    transform: 			translateY(-137px); 
+				}
+		    	@media all and @breakpoint-wide-plus {
+					-moz-transform: 	translateY(-167px);  
+				    -o-transform: 		translateY(-167px);  
+				    -webkit-transform: 	translateY(-167px);  
+				    transform: 			translateY(-167px); 
 				}
 		    }
 	    }
@@ -386,23 +392,27 @@ ul.nice-menu {
 					-o-transition: 		all 400ms ease-out;
 					-ms-transition: 	all 400ms ease-out;
 					transition: 		all 400ms ease-out;
-					top: 				170px;
+					text-align: 		center;
+					top: 				137px;
 					width: 				200px;
 					z-index: 			100;
 				}
 				@media all and @breakpoint-wide-plus {
 					font-size: 			14px;
-					height: 			150px;
-					padding: 			30px 10px 20px 10px;
-					top: 				200px;
+					height: 			170px;
+					padding: 			10px 10px 20px 10px;
+					top: 				167px;
 					width: 				260px;
 				}
 					h3 {
 						@media all and @breakpoint-normal-plus {
+							border-bottom: 	1px dotted white;
 							color: 			white;
 							font-size: 		14px;
 							letter-spacing: 1px;
-							margin-bottom: 10px;
+							margin-bottom: 	10px;
+							padding-bottom: 5px;
+							
 							}
 						@media all and @breakpoint-wide-plus {
 							font-size: 16px;
