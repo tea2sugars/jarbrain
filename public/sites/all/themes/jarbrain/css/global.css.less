@@ -292,14 +292,6 @@ ul.nice-menu {
 	}
 }
 
-.portfolio-list {
-	ul {
-		li {
-			height: 400px;
-		}
-	}
-}
-
 .pane-user-picture {
 	img {
 		height:	auto;
@@ -336,6 +328,92 @@ ul.nice-menu {
 		text-align: center;
 	}
 }
+
+/*Controls hover state*/
+
+.img-grid {
+	list-style: 		none;
+	margin-bottom:		40px;
+	min-height:			380px;
+	overflow: 			auto;
+	@media all and @breakpoint-normal-plus {
+		margin-bottom:		20px;
+		overflow: 			hidden;
+		position: 			relative;
+		min-height:			170px;  
+		height:				170px;
+	    width: 				220px;
+		}
+	@media all and @breakpoint-wide-plus {
+		height:				200px;
+	    width: 				280px;
+		}
+	    &:hover {
+		    .caption {
+		    	@media all and @breakpoint-normal-plus {
+					-moz-transform: 	translateY(-100%);  
+				    -o-transform: 		translateY(-100%);  
+				    -webkit-transform: 	translateY(-100%);  
+				    transform: 			translateY(-100%); 
+				}
+		    }
+	    }
+		img {
+			margin-bottom: 	20px;
+				@media all and @breakpoint-normal-plus {
+					margin-bottom:		0;
+					position: 			absolute;  
+				    left: 				0;  
+				    -webkit-transition: all 300ms ease-out;  
+				    -moz-transition: 	all 300ms ease-out;  
+				    -o-transition: 		all 300ms ease-out;  
+				    -ms-transition: 	all 300ms ease-out;  
+				    transition: 		all 300ms ease-out;
+			    }
+		    }
+	    .caption {
+			font-size: 			12px;
+			line-height: 		18px;
+				@media all and @breakpoint-normal-plus {
+					background-color: 	rgba(44,109,212,0.8);
+					color: 				white;
+					height: 			150px;
+					left: 				0;
+					position: 			absolute;
+					padding: 			10px 10px 10px 10px;
+					-webkit-transition: all 400ms ease-out;
+					-moz-transition: 	all 400ms ease-out;
+					-o-transition: 		all 400ms ease-out;
+					-ms-transition: 	all 400ms ease-out;
+					transition: 		all 400ms ease-out;
+					top: 				170px;
+					width: 				200px;
+					z-index: 			100;
+				}
+				@media all and @breakpoint-wide-plus {
+					font-size: 			14px;
+					height: 			150px;
+					padding: 			30px 10px 20px 10px;
+					top: 				200px;
+					width: 				260px;
+				}
+					h3 {
+						@media all and @breakpoint-normal-plus {
+							color: 			white;
+							font-size: 		14px;
+							letter-spacing: 1px;
+							margin-bottom: 10px;
+							}
+						@media all and @breakpoint-wide-plus {
+							font-size: 16px;
+							
+						}
+					}
+			}
+}
+
+
+
 
 /*Blog*/
 .blog-post {
