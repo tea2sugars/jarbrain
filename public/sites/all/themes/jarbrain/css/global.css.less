@@ -422,7 +422,96 @@ ul.nice-menu {
 			}
 }
 
-
+.img-grid-4 {
+		list-style: 		none;
+		margin-bottom:		40px;
+		min-height:			380px;
+		overflow: 			auto;
+		@media all and @breakpoint-normal-plus {
+			margin-bottom:		20px;
+			overflow: 			hidden;
+			position: 			relative;
+			min-height:			214px;  
+			height:				214px;
+		    width: 				220px;
+			}
+		@media all and @breakpoint-wide-plus {
+			height:				270px;
+		    width: 				380px;
+			}
+		    &:hover {
+			    .caption {
+			    	@media all and @breakpoint-normal-plus {
+						-moz-transform: 	translateY(-177px);  
+					    -o-transform: 		translateY(-177px);  
+					    -webkit-transform: 	translateY(-177px);  
+					    transform: 			translateY(-177px); 
+					}
+			    	@media all and @breakpoint-wide-plus {
+						-moz-transform: 	translateY(-237px);  
+					    -o-transform: 		translateY(-237px);  
+					    -webkit-transform: 	translateY(-237px);  
+					    transform: 			translateY(-237px); 
+					}
+			    }
+		    }
+			img {
+				margin-bottom: 	20px;
+					@media all and @breakpoint-normal-plus {
+						margin-bottom:		0;
+						position: 			absolute;  
+					    left: 				0;  
+					    -webkit-transition: all 300ms ease-out;  
+					    -moz-transition: 	all 300ms ease-out;  
+					    -o-transition: 		all 300ms ease-out;  
+					    -ms-transition: 	all 300ms ease-out;  
+					    transition: 		all 300ms ease-out;
+				    }
+			    }
+		    .caption {
+				font-size: 			12px;
+				line-height: 		18px;
+					@media all and @breakpoint-normal-plus {
+						background-color: 	rgba(44,109,212,0.8);
+						color: 				white;
+						height: 			185px;
+						left: 				0;
+						position: 			absolute;
+						padding: 			20px 10px 10px 10px;
+						-webkit-transition: all 400ms ease-out;
+						-moz-transition: 	all 400ms ease-out;
+						-o-transition: 		all 400ms ease-out;
+						-ms-transition: 	all 400ms ease-out;
+						transition: 		all 400ms ease-out;
+						text-align: 		center;
+						top: 				177px;
+						width: 				280px;
+						z-index: 			100;
+					}
+					@media all and @breakpoint-wide-plus {
+						font-size: 			14px;
+						height: 			270px;
+						padding: 			10px 10px 20px 10px;
+						top: 				237px;
+						width: 				360px;
+					}
+						h3 {
+							@media all and @breakpoint-normal-plus {
+								border-bottom: 	1px dotted white;
+								color: 			white;
+								font-size: 		14px;
+								letter-spacing: 1px;
+								margin-bottom: 	10px;
+								padding-bottom: 5px;
+								
+								}
+							@media all and @breakpoint-wide-plus {
+								font-size: 16px;
+								
+							}
+						}
+				}
+}
 
 
 /*Blog*/
