@@ -65,6 +65,10 @@ img {
 	.responsive_image;
 }
 
+.bottom-divide {
+	.border_bottom;
+}
+
 
 /*Pager*/
 /* Pagers Positioning */
@@ -266,7 +270,41 @@ ul.nice-menu {
 				}
 }
 
+/*Showreel*/
+.node-type-showreel {
+	#section-content {
+		.blk-background;
+		@media all and @breakpoint-narrow-plus {
+			background-size: 1px 439px;
+		}
+		@media all and @breakpoint-normal-plus {
+			background-size: 1px 574px;
+		}
+		@media all and @breakpoint-wide-plus {
+			background-size: 1px 710px;
+		}
+		
+	}
+}
+
+
+
 /*Portfolio*/
+
+.node-type-portfolio {
+	#section-content {
+		.blk-background;
+		@media all and @breakpoint-narrow-plus {
+			background-size: 1px 304px;
+		}
+		@media all and @breakpoint-normal-plus {
+			background-size: 1px 394px;
+		}
+		@media all and @breakpoint-wide-plus {
+			background-size: 1px 485px;
+		}
+	}
+}
 
 .videoWrapper, .player {
 	position: 			relative;
