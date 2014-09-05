@@ -28,7 +28,8 @@ p {			color: @color-grey;
 }
 
 ul {
-	margin:0;
+	list-style: 	none;
+	margin:			0;
 }
 
 .item-list ul li {
@@ -174,8 +175,47 @@ img {
 }
 	
 #section-footer {
-		background:		@color-dark-grey;
-		color:			white;
+		background:			@color-dark-grey;
+		border-top:			10px solid @color-grey;
+		padding:			20px 0;
+		
+		h2 {
+			color: 			white;
+			.font-light;
+			font-size: 		14px;
+			letter-spacing: 1px;
+			border-bottom: 	1px dotted white;
+		}
+		.block-3 {
+			@media all and @breakpoint-narrow-plus {
+				margin-top:		10px;
+			}
+			h2, p {
+				@media all and @breakpoint-narrow-plus {
+				text-align: center;
+				}
+			}
+			
+		}
+		.block-5 {
+			li {
+				float:			left;
+				margin-right:	10px;
+			}
+		}
+		p, li, a {
+			color:			white;
+			font-size: 		11px;
+			margin-bottom: 	5px;
+		}
+		p.reg-address {
+			color:			@color-light-grey;
+			font-family: 	serif;
+			font-size: 		12px;
+		}
+		#region-footer-second {
+			padding-top:20px;
+		}
 }
 
 /*nice menu's styling*/
@@ -649,6 +689,21 @@ ul.nice-menu {
 
 #blog-showcase {
 	margin-bottom:		10px;
+}
+
+.follow-links {
+
+	@media all and @breakpoint-narrow-plus {
+		margin-left:200px;
+	}
+
+	@media all and @breakpoint-normal-plus {
+		margin-left:320px;
+	}
+
+	@media all and @breakpoint-wide-plus {
+		margin-left:445px;
+	}
 }
 
 
