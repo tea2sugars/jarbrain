@@ -556,6 +556,39 @@ ul.nice-menu {
 				}
 }
 
+/*Slideshow*/
+.flexslider {
+	background: 		@color-brand-blue;
+	border:				0px;
+	box-shadow: 		none;
+	h3 {
+		color: 			white;
+		text-align: 	left;
+		margin:			10px 20px;
+		@media all and @breakpoint-narrow-plus {
+			text-align: 	right;
+		}
+
+	}
+	.flex-control-paging {
+		display: 	none;
+		@media all and @breakpoint-narrow-plus {
+			display: 	inherit;
+		}
+		bottom:		15px;
+		left:		15px;
+		text-align: left;
+		width:		50%;
+		li {
+			a {
+				background: 	white;
+				box-shadow: 	none;
+				height:			16px;
+				width:			16px;
+			}
+		}
+	}
+}
 
 /*Blog*/
 .blog-post {
