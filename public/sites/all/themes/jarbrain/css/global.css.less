@@ -386,9 +386,22 @@ ul.nice-menu {
 }
 
 .pane-user-picture {
+	display: none;
+	@media all and @breakpoint-narrow-plus {
+		display: inherit;
+	}
 	img {
 		height:	auto;
 		width:	100%;
+	}
+}
+
+.node-type-wp-blog {
+	.grid-4 {
+		display: none;
+		@media all and @breakpoint-narrow-plus {
+		display: inherit;
+		}
 	}
 }
 
@@ -662,6 +675,10 @@ ul.nice-menu {
 }
 
 .field-name-taxonomy-wp-blog-tags {
+	display:none;
+	@media all and @breakpoint-narrow-plus {
+		display: inherit;
+	}
 	li, .field-item {
 	margin:10px 0 !important;
 	text-align: right;
@@ -672,6 +689,7 @@ ul.nice-menu {
 			}
 		}
 }
+
 
 .post_meta {
 	h2, a, p {
@@ -691,6 +709,12 @@ ul.nice-menu {
 
 .field-name-field-blog-image {
 	margin-bottom: 		20px;
+}
+
+.field-type-text-with-summary {
+	img {
+		height:	auto;
+		width:	100%;		}
 }
 
 #blog-showcase {
