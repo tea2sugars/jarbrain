@@ -173,8 +173,16 @@ img {
 		margin:8px 0 0 0;
 		li {
 			color: @color-grey;
-			margin-right: 20px;
+			
 		} 
+		li:after {
+			content: "\25B8";
+			color: @color-brand-blue;
+			margin-left:10px;
+		}
+		li.last:after {
+			content: "";
+		}
 	}
 }
 	
