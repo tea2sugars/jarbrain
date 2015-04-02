@@ -11,10 +11,6 @@
  * for more information on this topic.
  */
  
- <?php
-/**
- * Override theme_breadcrumb().
- */
 function jarbrain_breadcrumb($breadcrumb) {
   $links = array();
   $path = '';
