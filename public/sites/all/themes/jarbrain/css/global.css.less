@@ -74,6 +74,10 @@ img {
 	.responsive_image;
 }
 
+.logo-img {
+	margin-top:5px;
+}
+
 .bottom-divide {
 	.border_bottom;
 }
@@ -186,6 +190,15 @@ img {
 		li.last:after {
 			content: "";
 		}
+	}
+}
+.front {
+	#zone-user-wrapper {
+		display: none;
+	}
+	#zone-preface-wrapper {
+		border-bottom: 	4px solid @color-dark-blue;
+		margin-bottom: 20px;
 	}
 }
 	
@@ -735,18 +748,29 @@ ul.nice-menu {
 	margin-bottom:		10px;
 }
 
-.follow-links {
+.block-follow-site {
+	margin-bottom: 20px;
+		h2.block-title {
+			font-size: 14px;
+			margin:10px 0;
+			@media all and @breakpoint-narrow-plus {
+			text-align: center;
+			}
+			
+		}
+}
+.follow-links {	
 
 	@media all and @breakpoint-narrow-plus {
-		margin-left:200px;
+		margin-left:225px;
 	}
 
 	@media all and @breakpoint-normal-plus {
-		margin-left:320px;
+		margin-left:345px;
 	}
 
 	@media all and @breakpoint-wide-plus {
-		margin-left:445px;
+		margin-left:465px;
 	}
 }
 
