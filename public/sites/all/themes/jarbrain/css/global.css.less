@@ -395,6 +395,7 @@ ul.nice-menu {
 .field-name-field-image {
 	.field-item {
 		.grid-6;
+		margin-bottom:20px;
 	}
 	.even {
 		float:right;
@@ -405,7 +406,14 @@ ul.nice-menu {
 	img {
 		width:100%;
 		height:auto;
+		
 	}
+}
+
+#panels-ipe-paneid-44 {
+  overflow: auto;
+  min-height: 300px;
+  margin-bottom: 35px;
 }
 
 .videoWrapper, .player {
@@ -463,10 +471,8 @@ ul.nice-menu {
 				margin:	0 auto;
 			}
 	}
-	.field-name-field-client-quote {
-		.block-quote;
-	}
-	.pane-node-field-client-quote,
+	
+	.field-name-field-quote-bodycopy,
 	.pane-node-field-quote-name,
 	.pane-node-field-credits,
 	.pane-node-field-external-url {
@@ -476,10 +482,30 @@ ul.nice-menu {
 			width:50%;
 		}
 	}
-	.pane-node-field-credits, .pane-node-field-quote-name, .pane-node-field-client-quote {
+	.pane-node-field-credits, .pane-node-field-quote-name, .field-name-field-quote-bodycopy {
 		text-align: center;
 	}
+	.field-name-field-quote-bodycopy {
+		.block-quote;
+	}
+	.field-name-field-quote-name {
+		margin-bottom:35px;
+	}
+	.pane-node-field-credits {
+		p {
+			margin-bottom: 5px;
+		}
+		h2 {
+			margin-bottom:10px;
+		}
+	}
+	
+	#cta {
+		margin:70px 0 35px;
+	}
 }
+
+
 
 /*Controls hover state*/
 
