@@ -11,6 +11,10 @@ h1 {
 			font-size: 16px;
 }
 
+.not-front h1 {
+	font-size:35px;
+}
+
 h2, h3 {
 			@font-light;
 			color: @color-dark-grey;
@@ -374,24 +378,26 @@ ul.nice-menu {
 	#section-content {
 		.blk-background;
 		@media all and @breakpoint-narrow-plus {
-			background-size: 1px 304px;
+			background-size: 1px 420px;
 		}
 		@media all and @breakpoint-normal-plus {
-			background-size: 1px 394px;
+			background-size: 1px 555px;
 		}
 		@media all and @breakpoint-wide-plus {
-			background-size: 1px 485px;
+			background-size: 1px 690px;
+		}
+		.pane-node-body {
+			margin-top:35px;
 		}
 	}
 }
 
 .videoWrapper, .player {
 	position: 			relative;
-	padding-bottom: 	56.25%; /* 16:9 */
+	padding-bottom: 	56.25%; 
 	padding-top: 		25px;
 	height: 			0;
-	border-top:			10px solid black;
-	border-bottom:		10px solid black;
+	
 		iframe {
 			position: 	absolute;
 			top: 		0;
@@ -470,12 +476,13 @@ ul.nice-menu {
 		margin-bottom:		20px;
 		overflow: 			hidden;
 		position: 			relative;
-		min-height:			170px;  
-		height:				170px;
+		min-height:			125px;  
+		height:				125px;
 	    width: 				220px;
 		}
 	@media all and @breakpoint-wide-plus {
-		height:				200px;
+		min-height:			150px; 
+		height:				150px;
 	    width: 				280px;
 		}
     &:hover {
