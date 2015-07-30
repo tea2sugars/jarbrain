@@ -57,7 +57,7 @@ a:hover {
 	text-decoration: 	underline;
 }
 
-a.button {
+a.button, input[type="submit"] {
 	.button-lrg;
 }
 
@@ -834,6 +834,33 @@ ul.nice-menu {
 	@media all and @breakpoint-wide-plus {
 		margin-left:465px;
 	}
+}
+
+//FORM CONTROL*/
+input#edit-submitted-phone-number, input#edit-submitted-email, input#edit-submitted-name {
+	width:100%;
+}
+
+.form-item-captcha-response {
+	width:60%;
+	float:left;
+}
+
+.form-actions {
+	width:40%;
+	float:right;
+	margin-top:-100px;
+}
+
+#edit-submit {
+	float:right;
+}
+
+span.fieldset-legend {
+		display:none;
+	}
+.fieldset-description {
+	font-size: 12px;
 }
 
 
