@@ -467,15 +467,35 @@ ul.nice-menu {
 	}
 }
 
-.views-exposed-widgets .views-widget select option
+.pane-node-author {
+	float:left;
+	min-width: 110px;
+	.pane-title {
+		float:left;
+		margin-right:5px;
+	}
+}
+
+.pane-node-created {
+	.pane-title {
+	float:left;
+	margin-right:5px;
+	}
+}
+
+.pane-node-body {
+	padding-top: 10px;
+	border-top:1px solid @color-brand-blue;
+}
 
 .pane-user-picture {
 	display: none;
+	width:80px;
 	@media all and @breakpoint-narrow-plus {
 		display: inherit;
 	}
 	img {
-		height:	auto;
+		height:	auto !important;
 		width:	100%;
 	}
 }
@@ -499,6 +519,18 @@ ul.nice-menu {
 			color: black;
 		}
 	}
+}
+
+.blog-body {
+	h3 {
+		border-bottom: 1px solid @color-brand-blue;
+		margin-bottom: 5px;
+	}
+}
+
+#blog-showcase h5 {
+	border-bottom: 1px solid @color-brand-blue;
+	margin-bottom: 5px;
 }
 
 .node-type-portfolio {
@@ -882,15 +914,26 @@ input#edit-submitted-phone-number, input#edit-submitted-email, input#edit-submit
 	width:100%;
 }
 
-.form-item-captcha-response {
-	width:60%;
-	float:left;
+.captcha {
+	width:260px;
+	float: left;
+	.form-item-captcha-response {
+		width:60%;
+		float:left;
+		.description {
+			display: none;
+		}
+	}
+	}
+	
+.pane-2 {
+	margin-top:140px;
 }
 
 .form-actions {
 	width:40%;
 	float:right;
-	margin-top:-100px;
+	margin-top:-90px;
 }
 
 #edit-submit {
