@@ -93,9 +93,6 @@ img {
 	
 }
 
-#section-header {
-	margin-bottom: 40px;
-}
 
 
 /*Pager*/
@@ -179,8 +176,23 @@ img {
 }
 
 .front #zone-preface-wrapper {
-	background: @color-brand-blue url(../images/slideshow.png) center top no-repeat;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d3c85+4,2b65bd+32,f9fafd+98 */
+	background: #0d3c85; /* Old browsers */
+	background: url(../images/slideshow-background.png);
+	background: url(../images/slideshow-background.png), linear-gradient(top,  #0d3c85 4%, #2b65bd 32%, #f9fafd 98%);
+	background: url(../images/slideshow-background.png), -moz-linear-gradient(top,  #0d3c85 4%, #2b65bd 32%, #f9fafd 98%); /* FF3.6-15 */
+	background: url(../images/slideshow-background.png), -webkit-linear-gradient(top,  #0d3c85 4%,#2b65bd 32%,#f9fafd 98%); /* Chrome10-25,Safari5.1-6 */
+	background: url(../images/slideshow-background.png), linear-gradient(top,  #0d3c85 4%,#2b65bd 32%,#f9fafd 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d3c85', endColorstr='#f9fafd',GradientType=0 ); /* IE6-9 */
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+
 }
+
+.section-content {padding-top:40px;}
+
+.context-showreels .section-content, .page-portfolio .section-content {padding-top:0;}
 
 #zone-user-wrapper {
 	background: 	white;
@@ -208,7 +220,6 @@ img {
 	}
 	#zone-preface-wrapper {
 		border-bottom: 	4px solid @color-dark-blue;
-		margin-bottom: 20px;
 	}
 }
 	
