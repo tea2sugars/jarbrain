@@ -162,6 +162,10 @@ img {
 }
 
 /*Zones, Sections and Regions*/
+#zone-header-wrapper {
+	background: white;
+}
+
 #zone-preface-wrapper {
 	background: #114caa; /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -175,7 +179,7 @@ img {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#114caa', endColorstr='#1356bf',GradientType=0 ); /* IE6-8 */
 }
 
-.front #zone-preface-wrapper {
+.front #section-header {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d3c85+4,2b65bd+32,f9fafd+98 */
 	background: #0d3c85; /* Old browsers */
 	background: url(../images/slideshow-background.png);
@@ -185,9 +189,16 @@ img {
 	background: url(../images/slideshow-background.png), linear-gradient(top,  #0d3c85 4%,#2b65bd 32%,#f9fafd 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d3c85', endColorstr='#f9fafd',GradientType=0 ); /* IE6-9 */
 	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
+	background-position: center 47px;
 
+}
+
+.front #zone-preface-wrapper {
+	background: transparent;
+	background-image: url(../images/slide-title-background.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-size: 1px 57px;
 }
 
 .section-content {padding-top:40px;}
@@ -768,7 +779,7 @@ ul.nice-menu {
 
 /*Slideshow*/
 .flexslider {
-	background: 		@color-brand-blue;
+	background: 		transparent;
 	border:				0px;
 	box-shadow: 		none;
 	margin-bottom:		0;
@@ -796,11 +807,21 @@ ul.nice-menu {
 		width:		50%;
 		li {
 			a {
-				background: 	white;
+				background: 	@color-brand-blue;
 				box-shadow: 	none;
-				height:			16px;
-				width:			16px;
+				border: 2px solid white;
+				height:			15px;
+				width:			15px;
 			}
+			a.flex-active {
+				background: white;
+				
+			}
+		}
+	}
+	.flex-direction-nav {
+		a {
+			color: white;
 		}
 	}
 }
