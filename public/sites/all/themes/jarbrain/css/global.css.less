@@ -180,6 +180,12 @@ img {
 }
 
 .front #section-header {
+	background: url(../images/jarbrain_background-mobile.jpg) center top no-repeat;
+	}
+
+
+@media all and @breakpoint-narrow-plus {
+	.front #section-header {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d3c85+4,2b65bd+32,f9fafd+98 */
 	background: #0d3c85; /* Old browsers */
 	background: url(../images/slideshow-background.png);
@@ -192,6 +198,7 @@ img {
 	background-position: center 47px;
 
 }
+}
 
 .front #zone-preface-wrapper {
 	background: transparent;
@@ -201,7 +208,10 @@ img {
 	background-size: 1px 57px;
 }
 
-.section-content {padding-top:40px;}
+.front .section-content {padding-top:40px;}
+.not-front .section-content {
+	padding:0;
+}
 
 .context-showreels .section-content, .page-portfolio .section-content {padding-top:0;}
 
