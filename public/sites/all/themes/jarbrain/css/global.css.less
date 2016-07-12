@@ -483,22 +483,55 @@ ul.nice-menu {
 	}
 }
 
+.views-exposed-form .views-exposed-widget {
+	padding-right:0 !important;
+}
+
 .views-exposed-widgets {
 	width:		100%;
 	@media all and @breakpoint-narrow-plus {
 		float:right;
-		width:300px;
+		width:420px;
 	}
-	label {
+	#edit-client-wrapper {
+		label {
 			font-weight: normal;
 			color: #333;
+			float:left;
+			width:auto;
+			text-align: right;
 		}
-	.views-widget {
-		
-		select {
-			border: 1px solid #cccccc;
-			border-radius: 5px;
+		.views-widget {
+			float:right;
+			width:140px;
+			margin-left:5px;
+			select {
+				border: 1px solid #cccccc;
+				border-radius: 5px;
+				
+			}
 		}
+
+	}
+	#edit-project-type-wrapper {
+		label {
+			font-weight: normal;
+			color: #333;
+			float:left;
+			width:auto;
+			text-align: right;
+		}
+		.views-widget {
+			float:right;
+			width:140px;
+			margin-left:5px;
+			select {
+				border: 1px solid #cccccc;
+				border-radius: 5px;
+				
+			}
+		}
+
 	}
 }
 
